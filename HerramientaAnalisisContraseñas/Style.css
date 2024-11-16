@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#resultado {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#resultado.débil {
+    background-color: #ffcccb;
+    color: red;
+}
+
+#resultado.fuerte {
+    background-color: #c8e6c9;
+    color: green;
+}
+
+#resultado.media {
+    background-color: #fff9c4;
+    color: orange;
+}

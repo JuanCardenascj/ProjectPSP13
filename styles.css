@@ -1,0 +1,193 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo general para la sección */
+section {
+  display: flex;
+  justify-content: space-around; /* Distribuye las cartas uniformemente */
+  flex-wrap: wrap; /* Permite que las cartas se envuelvan si la pantalla es pequeña */
+  gap: 20px; /* Espaciado entre las cartas */
+  padding: 40px;
+  background-color: #f4f4f9; /* Fondo suave */
+}
+
+/* Estilo de las cartas */
+.carta {
+  background-color: white; /* Fondo blanco para las cartas */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  width: 300px; /* Ancho fijo de las cartas */
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s; /* Efecto suave para el hover */
+}
+
+.carta h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #333;
+  font-weight: bold;
+}
+
+.carta p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.carta button {
+  background-color: #4CAF50; /* Color verde para el botón */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.carta button:hover {
+  background-color: #45a049; /* Cambio de color al hacer hover */
+}
+
+/* Efecto al pasar el ratón sobre la carta */
+.carta:hover {
+  transform: translateY(-10px); /* Elevación de la carta */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+
+/* Estilo del encabezado */
+header {
+  background-color: #333;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+/* Contenedor de los botones */
+.botones {
+  display: flex;
+  justify-content: center; /* Centra los botones horizontalmente */
+  gap: 20px; /* Espacio entre los botones */
+}
+
+/* Estilo para los botones */
+.boton {
+  display: inline-block;
+  padding: 20px 20px;
+  background-color: #555;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Efecto al pasar el mouse por encima */
+.boton:hover {
+  background-color: #888;
+  transform: translateY(-3px);
+}
+
+/* Estilo para el nombre (botón destacado) */
+/*.nombre {
+  background: linear-gradient(to top, #fff, #ccc);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  padding: 12px 24px;  Un poco más de padding para que sea más visible 
+}*/
+
+/* Estilo para el nombre (ya no es un botón, solo texto) */
+.nombre {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  background: linear-gradient(to top, #fff, #ccc);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  padding: 12px 24px; /* Espaciado para hacerlo más visible */
+}
+
+/* Estilo para el enlace con la clase "name" */
+.name {
+  font-size: 30px; /* Tamaño grande */
+  font-weight: bold; /* Negrita */
+  text-transform: uppercase;
+  padding: 12px 24px;
+  color: #4CAF50; /* Color sólido verde */
+  text-decoration: none; /* Quita el subrayado predeterminado */
+  font-family: 'Arial', sans-serif; /* Cambiar tipo de fuente */
+}
+
+/* Estilo para el enlace con la clase "name" */
+.name {
+  font-size: 30px;
+  font-weight: bold;
+  background: linear-gradient(to right, #4CAF50, #4CAF50); /* Gradiente de colores */
+  -webkit-background-clip: text; /* Recorta el fondo a la forma del texto */
+  background-clip: text;
+  color: transparent; /* Hace que el texto sea transparente para mostrar el gradiente */
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2); /* Sombra de texto */
+  text-decoration: none;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Efecto hover (opcional) */
+.name:hover {
+  text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3); /* Aumenta la sombra al pasar el ratón */
+}
+
+/* Estilo para la imagen dentro de la carta */
+.carta img {
+  max-width: 100%; /* Hace que la imagen se ajuste al tamaño del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 8px; /* Bordes redondeados en la imagen */
+  margin-bottom: 20px; /* Espacio entre la imagen y el botón */
+}
+
+/* Estilo para el título */
+section h2 {
+  font-size: 36px; /* Tamaño grande para el subtítulo */
+  font-weight: bold; /* Negrita */
+  color: #4CAF50; /* Color verde */
+  text-transform: uppercase; /* Convierte el texto a mayúsculas */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  margin-left: 0; /* Asegura que no haya margen izquierdo */
+  opacity: 0; /* Lo oculta al principio para animarlo */
+  transform: translateX(-50px); /* Empuja el título hacia la izquierda inicialmente */
+  animation: slideIn 1s forwards; /* Aplica la animación */
+}
+
+/* Estilo para el título */
+section a, .name {
+  font-size: 36px; /* Tamaño grande para el subtítulo */
+  font-weight: bold; /* Negrita */
+  color: #4CAF50; /* Color verde */
+  text-transform: uppercase; /* Convierte el texto a mayúsculas */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  margin-left: 0; /* Asegura que no haya margen izquierdo */
+  opacity: 0; /* Lo oculta al principio para animarlo */
+  transform: translateX(-50px); /* Empuja el título hacia la izquierda inicialmente */
+  animation: slideIn 1s forwards; /* Aplica la animación */
+}
+
+/* Animación de entrada */
+@keyframes slideIn {
+  0% {
+      opacity: 0;
+      transform: translateX(-50px); /* Empuja el título hacia la izquierda */
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0); /* El título se mueve a su posición final */
+  }
+}
