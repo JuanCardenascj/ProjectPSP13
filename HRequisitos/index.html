@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verificador de Contraseña Segura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Comprobador de Seguridad de Contraseña</h1>
+        <label for="password">Introduce tu contraseña:</label>
+        <input type="password" id="password" placeholder="Ingresa una contraseña" onkeyup="checkPassword()">
+        
+        <div id="requirements">
+            <p id="length" class="invalid">Debe tener al menos 12 caracteres.</p>
+            <p id="uppercase" class="invalid">Debe contener al menos una letra mayúscula.</p>
+            <p id="lowercase" class="invalid">Debe contener al menos una letra minúscula.</p>
+            <p id="number" class="invalid">Debe contener al menos un número.</p>
+            <p id="special" class="invalid">Debe contener al menos un carácter especial (!, @, #, $, %, etc.).</p>
+        </div>
+
+        <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

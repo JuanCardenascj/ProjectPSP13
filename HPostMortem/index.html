@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herramienta Post Mortem - Ciberseguridad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Herramienta de Análisis Post Mortem</h1>
+        <p>Analiza los logs de seguridad para detectar posibles incidentes.</p>
+        
+        <label for="logFile">Cargar archivo de log:</label>
+        <input type="file" id="logFile" accept=".txt,.log">
+        
+        <button onclick="analizarLog()">Analizar Log</button>
+
+        <div id="resultados">
+            <h2>Resultados del análisis:</h2>
+            <pre id="logOutput">Esperando archivo...</pre>
+        </div>
+
+        <div id="informe">
+            <h2>Informe de Incidente:</h2>
+            <pre id="reporte">No hay incidentes detectados.</pre>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
