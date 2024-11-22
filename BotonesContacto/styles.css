@@ -1,0 +1,158 @@
+/* Estilos Globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* Encabezado */
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+/* Sección Contacto */
+#contacto {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+#contacto h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.contacto-item {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contacto-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contacto-item h3 {
+    font-size: 1.8rem;
+    color: #3498db;
+}
+
+.contacto-item p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Redes Sociales */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Formulario de Contacto */
+#formulario {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+#formulario h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #34495e;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+form button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+form button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 50px;
+    padding: 20px 0;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>📩 Contáctanos 📩</h1>
+        <p>¿Tienes alguna pregunta o sugerencia? ¡Estamos aquí para ayudarte!</p>
+    </header>
+
+    <!-- Sección de Maneras de Contacto -->
+    <section id="contacto">
+        <h2>Maneras de Ponerte en Contacto</h2>
+        <div class="contacto-item" id="telefono">
+            <h3>Teléfono</h3>
+            <p>Llámamos al: <strong>+57 200 300 123</strong></p>
+            <p>Disponible de lunes a viernes de 6am a 6pm.</p>
+        </div>
+        <div class="contacto-item" id="email">
+            <h3>Email</h3>
+            <p>Envíanos un correo a: <strong>Hansary_Engineers@desarrolladores.com</strong></p>
+        </div>
+        <div class="contacto-item" id="redes">
+            <h3>Redes Sociales</h3>
+            <p>Síguenos en nuestras redes sociales para estar al tanto de novedades:</p>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank" class="social-icon">Facebook</a>
+                <a href="https://twitter.com" target="_blank" class="social-icon">Twitter</a>
+                <a href="https://linkedin.com" target="_blank" class="social-icon">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section id="formulario">
+        <h2>Formulario de Contacto</h2>
+        <form id="form-contacto">
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            <input type="email" id="email-contacto" name="email" placeholder="Tu correo electrónico" required>
+            <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Desarrolladores Web. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

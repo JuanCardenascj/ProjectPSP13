@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de donaciones para apoyar a los desarrolladores y servicios web.">
+    <title>Donaciones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Sección Hero -->
+    <section id="home" class="hero">
+        <h1>⚜ Ayuda a los Desarrolladores ⚜</h1>
+        <p>Tu apoyo es fundamental para seguir brindando servicios gratuitos de alta calidad.</p>
+        <a href="#donar" class="cta-button">Haz tu Donación</a>
+    </section>
+
+    <!-- Sección de Donación -->
+    <section id="donar" class="donacion">
+        <h2>Realiza tu Donación</h2>
+        <p>Elige el monto que deseas donar y haz una diferencia.</p>
+
+        <!-- Formulario de Donación -->
+        <form id="form-donacion">
+            <label for="monto">Monto de la Donación (en USD):</label>
+            <input type="number" id="monto" name="monto" min="1" required>
+
+            <label for="mensaje">Mensaje de Agradecimiento (opcional):</label>
+            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+            <button type="submit" class="donar-button">Donar Ahora</button>
+        </form>
+
+        <!-- Aquí podrías integrar un botón de PayPal o Stripe, por ejemplo -->
+        <div class="paypal-button">
+            <p>O haz tu donación usando PayPal</p>
+            <!-- Aquí deberías integrar el botón de PayPal o Stripe -->
+            <button class="paypal-btn">Donar con PayPal</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 - Gracias por tu gran apoyo 💖</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
