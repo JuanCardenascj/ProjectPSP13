@@ -15,7 +15,7 @@ section {
   background-color: #f4f4f9; /* Fondo suave */
 }
 
-/* Estilo de las cartas */
+/* Estilo de las cartas */ 
 .carta {
   background-color: white; /* Fondo blanco para las cartas */
   border-radius: 10px; /* Bordes redondeados */
@@ -25,12 +25,13 @@ section {
   transition: transform 0.3s, box-shadow 0.3s; /* Efecto suave para el hover */
 }
 
+
 .carta h3 {
   font-size: 22px;
   margin-bottom: 15px;
   color: #333;
   font-weight: bold;
-}
+} 
 
 .carta p {
   font-size: 16px;
