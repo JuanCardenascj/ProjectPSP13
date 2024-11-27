@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Analizador de Contraseñas</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class="container">
-        <h1>Analizador de Contraseñas</h1>
-        <label for="password">Introduce tu contraseña:</label>
-        <input type="password" id="password" placeholder="Ingresa una contraseña" onkeyup="validarContrasena()">
-        <p id="mensaje"></p>
-        <div id="resultado"></div>
+    <div class="overlay">
+        <div class="container">
+            <h1>Analizador de Contraseñas</h1>
+            <label for="password">Introduce tu contraseña:</label>
+            <input type="password" id="password" placeholder="Ingresa una contraseña" onkeyup="validarContrasena()">
+            <p id="mensaje"></p>
+            <div id="resultado"></div>
+        </div>
     </div>
 
     <script src="script.js"></script>
 </body>
 </html>
+

@@ -13,6 +13,7 @@ body {
     line-height: 1.6;
     text-align: center;
     padding-bottom: 20px;
+    background: linear-gradient(135deg, #e74c3c, #8e44ad);
 }
 
 /* Encabezado */
@@ -22,6 +23,7 @@ header {
     padding: 50px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
 }
 
 header h1 {
@@ -32,7 +34,12 @@ header h1 {
 
 header p {
     font-size: 1.2rem;
-    margin-top: 0;
+}
+
+/* Efecto fadeIn para animar la aparición de elementos */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 /* Sección Contacto */
@@ -40,6 +47,7 @@ header p {
     max-width: 900px;
     margin: 50px auto;
     padding: 20px;
+    animation: fadeIn 1.5s ease-out;
 }
 
 #contacto h2 {
@@ -55,22 +63,18 @@ header p {
     margin: 15px 0;
     border-radius: 10px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .contacto-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    background-color: #f1f1f1;
 }
 
 .contacto-item h3 {
     font-size: 1.8rem;
     color: #3498db;
-}
-
-.contacto-item p {
-    font-size: 1.1rem;
-    color: #555;
 }
 
 /* Redes Sociales */
@@ -93,7 +97,11 @@ header p {
 
 .social-icon:hover {
     background-color: #2980b9;
-    transform: scale(1.05);
+    transform: scale(1.1);
+}
+
+.social-icon i {
+    margin-right: 10px;
 }
 
 /* Formulario de Contacto */
@@ -104,6 +112,7 @@ header p {
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-out;
 }
 
 #formulario h2 {
@@ -156,3 +165,4 @@ footer {
 footer p {
     margin: 0;
 }
+

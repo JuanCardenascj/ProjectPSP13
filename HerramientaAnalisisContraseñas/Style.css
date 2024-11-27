@@ -1,57 +1,122 @@
+/* Reseteo de estilos básicos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Fondo de pantalla y diseño de la página */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    background-image: url('ImagenesA/Fondo.jpg'); /* Cambia la URL por tu imagen */
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    color: white;
 }
 
-.container {
-    background-color: white;
+/* Contenedor principal */
+.overlay {
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro para el contraste */
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
     width: 100%;
-    max-width: 400px;
-    text-align: center;
+    max-width: 450px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
 }
 
+/* Animación para entrada suave */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Estilos del título */
 h1 {
+    text-align: center;
+    font-size: 2.5rem;
     margin-bottom: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Estilos de los campos */
+label {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    display: block;
 }
 
 input {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    font-size: 1rem;
+    transition: background-color 0.3s;
 }
 
+input:focus {
+    background-color: #fff;
+}
+
+/* Estilos para el mensaje y el resultado */
 #resultado {
     margin-top: 20px;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease;
 }
 
 #resultado.débil {
-    background-color: #ffcccb;
-    color: red;
+    background-color: #f44336; /* Rojo para débil */
+    color: #fff;
 }
 
 #resultado.fuerte {
-    background-color: #c8e6c9;
-    color: green;
+    background-color: #4caf50; /* Verde para fuerte */
+    color: #fff;
 }
 
 #resultado.media {
-    background-color: #fff9c4;
-    color: orange;
+    background-color: #ffeb3b; /* Amarillo para media */
+    color: #000;
+}
+
+/* Estilo de los mensajes */
+#mensaje {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    font-weight: 300;
+    text-align: center;
+}
+
+/* Efecto de animación en el resultado */
+@keyframes resultAnimation {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+#resultado {
+    animation: resultAnimation 0.6s ease-out;
 }

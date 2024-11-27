@@ -33,3 +33,4 @@ function validarContrasena() {
     resultado.innerText = mensajeResultado;
     resultado.className = claseResultado;
 }
+
