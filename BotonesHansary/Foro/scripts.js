@@ -48,10 +48,8 @@ function mostrarTemas() {
 // Función para eliminar un tema
 function eliminarTema(id) {
     let temas = JSON.parse(localStorage.getItem('temas')) || [];
-    // Filtrar el tema con el ID especificado
     temas = temas.filter(t => t.id !== id);
 
-    // Guardar la lista actualizada en localStorage
     localStorage.setItem('temas', JSON.stringify(temas));
 
     // Actualizar la interfaz después de eliminar el tema
@@ -97,5 +95,6 @@ window.onload = function() {
         }
     };
 };
+
 
 

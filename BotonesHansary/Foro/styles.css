@@ -7,7 +7,10 @@
 }
 
 body {
-  background-color: #f4f7f6;
+  background-image: url('Imagenes/fondo2.jpg'); /* Cambia la ruta por la de tu imagen */
+  background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+  background-position: center center; /* Centra la imagen */
+  background-attachment: fixed; /* Mantiene la imagen fija mientras se hace scroll */
   color: #333;
   font-size: 1rem;
   line-height: 1.6;
@@ -17,7 +20,7 @@ body {
 
 /* Encabezado */
 header {
-  background-color: #34495e;
+  background-color: rgba(52, 152, 94, 0.8); /* Fondo semi-transparente para contraste */
   color: white;
   padding: 50px;
   text-align: center;
@@ -32,9 +35,12 @@ header h1 {
 
 /* Sección Temas */
 #temas {
-  max-width: 800px;
+  max-width: 900px;
   margin: 30px auto;
   text-align: left;
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente para contraste */
+  border-radius: 12px;
+  padding: 20px;
 }
 
 #temas h2 {
@@ -54,14 +60,15 @@ header h1 {
   background-color: #ffffff;
   padding: 20px;
   margin: 15px 0;
-  border-radius: 10px;
+  border-radius: 12px;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .tema:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  background-color: #f0f3f5;
 }
 
 .tema h3 {
@@ -97,35 +104,6 @@ header h1 {
   outline: none;
 }
 
-/* Comentarios */
-.comentarios {
-  margin-top: 20px;
-  padding-left: 20px;
-  border-left: 2px solid #ddd;
-}
-
-.comentarios p {
-  font-size: 1rem;
-  margin: 8px 0;
-  color: #666;
-}
-
-textarea {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 15px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
-  box-sizing: border-box;
-  transition: border-color 0.3s ease;
-}
-
-textarea:focus {
-  border-color: #4CAF50;
-  outline: none;
-}
-
 /* Crear Tema */
 #crear-tema {
   background-color: #fff;
@@ -134,6 +112,7 @@ textarea:focus {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   max-width: 800px;
   margin: 30px auto;
+  animation: fadeIn 0.5s ease-out;
 }
 
 #crear-tema h2 {
@@ -156,6 +135,7 @@ form input, form textarea {
 form input:focus, form textarea:focus {
   border-color: #4CAF50;
   outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
 }
 
 form button {
@@ -187,5 +167,16 @@ footer {
 footer p {
   margin: 0;
 }
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
 
 

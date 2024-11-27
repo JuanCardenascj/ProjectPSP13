@@ -6,40 +6,65 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    background-image: url('ImagenesR/Fondo.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
 }
 
 .container {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     width: 100%;
     max-width: 400px;
-    text-align: center;
+    transition: transform 0.3s ease-in-out;
 }
 
-/* Estilo del input */
+.container:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 input {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
     border-radius: 5px;
+    background-color: #fff;
+    color: #333;
     font-size: 16px;
+    transition: all 0.3s ease;
 }
 
-/* Estilo de los requisitos */
+input:focus {
+    border-color: #4caf50; /* Cambiar color del borde cuando se enfoca */
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
 #requirements p {
     font-size: 14px;
     text-align: left;
     margin: 5px 0;
-    color: #777;
+    color: #bbb;
+    transition: color 0.3s ease;
 }
 
 .invalid {
@@ -54,4 +79,21 @@ input {
     font-size: 16px;
     font-weight: bold;
     margin-top: 20px;
+    transition: color 0.3s ease;
 }
+
+/* Efectos para el mensaje */
+#message.valid {
+    color: #4caf50;
+}
+
+#message.invalid {
+    color: #f44336;
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 90%;
+    }
+}
+

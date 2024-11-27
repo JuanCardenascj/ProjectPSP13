@@ -1,108 +1,200 @@
+/* Reset y estilo básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Fondo con imagen y parallax */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-image: url('Imagenes/fondo2.jpg'); /* Cambia la ruta de la imagen */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
 }
 
+/* Encabezado */
 header {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
-    padding: 10px 0;
+    padding: 50px 20px;
     text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: 30px;
 }
 
 header h1 {
-    margin-bottom: 10px;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+/* Sección de formularios y experiencias */
+section {
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
-nav ul li {
-    margin: 0 15px;
+section:hover {
+    transform: scale(1.02); /* Efecto de hover */
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
+/* Títulos y párrafos */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2C3E50;
     font-weight: bold;
 }
 
-section {
-    padding: 20px;
-    margin: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
 }
 
+/* Formulario */
 form label {
     display: block;
     margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
 }
 
 form input, form textarea {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 8px;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+    outline: none;
 }
 
 form button {
-    background-color: #333;
+    background-color: #3498db;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 25px;
     border: none;
-    border-radius: 4px;
+    border-radius: 30px;
     cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 form button:hover {
-    background-color: #555;
+    background-color: #2980b9;
+    transform: scale(1.05);
 }
 
-#lista-experiencias {
-    margin-top: 20px;
+form button:focus {
+    outline: none;
 }
 
+/* Sección de experiencias */
 .experiencia {
-    background-color: #e9e9e9;
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 15px;
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experiencia:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .experiencia h3 {
-    color: #333;
+    font-size: 1.5rem;
+    color: #2980b9;
+    margin-bottom: 10px;
 }
 
 .experiencia p {
-    margin: 10px 0;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
 }
 
 .experiencia button {
-    background-color: #555;
+    background-color: #3498db;
     color: white;
+    padding: 10px 20px;
     border: none;
-    padding: 8px 15px;
-    border-radius: 4px;
+    border-radius: 25px;
     cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.experiencia button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.comentarios {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.comentario {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #34495e;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-comentario {
+    display: none;
+    margin-top: 10px;
+}
+
+.comentario-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    transition: border 0.3s;
+}
+
+.comentario-input:focus {
+    border-color: #3498db;
+    outline: none;
 }
 
 footer {
-    text-align: center;
-    margin-top: 40px;
-    padding: 10px 0;
     background-color: #333;
     color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    margin-top: 40px;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+section, .experiencia {
+    animation: fadeIn 1s ease-out;
 }

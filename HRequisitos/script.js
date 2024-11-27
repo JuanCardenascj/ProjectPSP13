@@ -67,3 +67,4 @@ function checkPassword() {
         message.style.color = "#f44336"; // Rojo
     }
 }
+
