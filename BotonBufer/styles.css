@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-image: url('Imagenes/fondo2.jpg'); /* Aquí pones la ruta de la imagen */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Esto hace que el fondo no se mueva al hacer scroll */
+}
+
+/* Estilos de cabecera */
+header {
+    background-color: rgba(34, 34, 34, 0.8); /* Fondo oscuro con opacidad */
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-out;
+}
+
+header h1 {
+    font-size: 3em;
+    letter-spacing: 2px;
+    animation: slideIn 2s ease-out;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Sección Principal */
+section {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad para que se vea el fondo */
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: translateY(-10px);
+}
+
+h2, h3 {
+    color: #444;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+p {
+    line-height: 1.8;
+    font-size: 1.1em;
+}
+
+/* Estilo para las listas de valores */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 1.2em;
+    position: relative;
+    padding-left: 20px;
+}
+
+ul li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #4CAF50;
+}
+
+/* Estilos de pie de página */
+footer {
+    background-color: rgba(34, 34, 34, 0.8); /* Fondo oscuro con opacidad */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Efecto de hover en links y botones */
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+/* Estilo para el Footer */
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Estilos Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    section {
+        padding: 30px 15px;
+    }
+
+    h2, h3 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}

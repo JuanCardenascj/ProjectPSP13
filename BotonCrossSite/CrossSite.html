@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cross-Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cross-Site 📈</h1>
+    </header>
+
+    <section class="intro">
+        <h2>¿Qué es un ataque Cross-Site Scripting (XSS) y cómo podemos solucionarlo?</h2>
+        <p>Las secuencias de comandos entre sitios son otra forma de cometer delitos cibernéticos que buscan explotar vulnerabilidades en un sitio web legítimo y confiable, este ataque cibernético es bastante común, y está generalmente dirigido a los navegadores de los usuarios finales con el fin de para robar datos, acceder a cuentas, entre otras acciones; también puede usarse para desconfigurar y comprometer tu sitio web, razón por la cual usamos este post para explicarte todo lo que necesitas saber sobre el cross-site scripting, cómo funciona, qué tipos existen, algunos ejemplos y formas de probarlo y prevenirlo.
+            <br><h2>¿Qué es el Cross-Site Scripting?</h2>Los ataques de secuencias de comandos entre sitios o XSS, es un tipo de ataque de inyección mediante el cual los piratas informáticos inyectan scripts maliciosos en un sitio web fiable que no tiene los protocolos de seguridad adecuados debidamente configurados; los ataques XSS entre sitios web comienza cuando la víctima visita un sitio web corrupto y este actúa como vehículo de entrega para código malicioso.
+            <br>Entonces, ¿cuál es el elemento de vulnerabilidad en las secuencias de comandos entre sitios? Cuando hablamos de ataques XSS, los vectores de inyección que son más comúnmente usados incluyen campos de entrada manejados por los usuarios, tales como cajas de comentarios, foros, tableros de mensajes, ventanas emergentes, etc. Cualquier sitio web es especialmente susceptible a este tipo de ataques cibernéticos si no filtra o desinfecta las vías de entrada para los usuarios.
+        </p>
+    </section>
+
+    <section>
+        <h3>¿Cómo funciona el Cross-Site Scripting?</h3>
+        <p>Todo empieza cuando los ataques XSS eluden una medida de seguridad conocida como “Política del mismo origen” (o SOP). Cuando un sitio web no hace cumplir esta política, los piratas informáticos pueden inyectar scripts maliciosos fácilmente a través de las entradas de data usualmente destinadas para usuarios para lograr lo que se planteen, desde el robo de identidad, hasta infecciones con malware, y planes coordinados con el fin de causar estragos en páginas web específicas.
+            <br>Las secuencias de comandos entre sitios suelen constar de dos etapas específicas:
+            <br><ul><li><h3>ETAPA 1:</h3>Los piratas informáticos identifican un sitio web con vulnerabilidades XSS y campos de entrada de usuario sin protección, acto seguido procede a inyectar código malicioso en el sitio web, el cual se comporta como código fuente en el navegador de la víctima.</li></ul>
+            <br><ul><li><h3>ETAPA 2:</h3> Se produce un ataque de secuencias de comandos entre sitios, una vez que un usuario desprevenido visita el sitio web ya infectado; debido a que no se puede notar la diferencia, el navegador web de la víctima ejecuta el script malicioso junto con el código fuente legítimo. El criminal informático ahora puede robar cookies de inicios de sesión, credenciales de acceso y cualquier otro dato utilizado por el sitio web bajo ataque o que haya sido guardado por el navegador; en la mayoría de los casos, los blancos de estos eventos no detectan el ataque XSS hasta que es demasiado tarde</li></ul>
+        </p>
+    </section>
+    
+    <section>
+        <h3>Nuestra Visión</h3>
+        <p>Ser la herramienta líder en educación y análisis de seguridad de contraseñas a nivel global, contribuyendo a la creación de un entorno digital más seguro. A través de la innovación y el compromiso con la ciberseguridad, buscamos transformar la forma en que las personas y organizaciones gestionan su protección en línea, reduciendo significativamente los riesgos de accesos no autorizados y mejorando la privacidad en la era digital</p>
+    </section>
+        
+    <section class="values">
+        <h3>¿Para qué son usados los ataques XSS?</h3>
+        <p>Los ataques de secuencias de comandos entre sitios son ejecutados principalmente para robar cookies, secuestrar sesiones de usuarios y comprometer cuentas de usuarios finales; los piratas informáticos pueden hacerse pasar por ti fácilmente y explotar tus datos, accediendo a tu geolocalización, el micrófono y la cámara web de tu equipo, los archivos, y otras utilidades en tus dispositivos.
+            <br>Sin embargo, un ataque XSS no representa una amenaza solamente para el usuario final, ya que también puede causar daños irreversibles en sitios web completos, al modificar el contenido, desconfigurar las páginas web y extraer datos privilegiados. Hay varias otras razones para aprender a evitar las secuencias de comandos entre sitios, si un ataque de este tipo fuese exitoso puede permitir a los piratas informáticos hacer lo siguiente:
+            <br><ul>
+                <li>Acceder a información confidencial, incluidos datos bancarios y datos de inicio de sesión.</li>
+                <li>Robar o alterar el código fuente de un sitio web.</li>
+                <li>Instalar malware como spyware y virus en tus dispositivos, terminales o computadoras personales. </li>
+                <li>Secuestrar tus cuentas de redes sociales o de cuentas bancarias.</li>
+                <li>Acceder a áreas privilegiadas de un sitio web</li>
+            </ul>
+        </p>
+    </section>
+
+    <section>
+        <h3>Impacto de los ataques XSS</h3>
+        <p>El impacto de los ataques de secuencias de comandos entre sitios varía según el tipo de aplicación o sitio web que afecten, las funciones en las que creen la interrupción de servicio y el estado de la víctima. Si tales ataques afectan a tus usuarios, por lógica también afectarán tu sitio web. Las plataformas con usuarios anónimos e información pública se ven menos afectadas, mientras que los sitios web que contienen registros confidenciales o acceso restringido pueden verse más afectadas.
+            <br><h3>¿Cuáles son los tipos de ataques XSS?</h3>Existen tres tipos principales de vulnerabilidades de secuencias de comandos cruzadas: XSS persistente (almacenado), XSS reflectante y XSS basado en DOM.
+            <br><ul>
+                <li>XSS persistente (almacenado)</li>
+                <li>XSS reflectante</li>
+                <li>XSS basado en DOM</li>
+            </ul>
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Nuestra Empresa. Todos los derechos reservados.</p>
+    </footer>
+    
+</body>
+</html>

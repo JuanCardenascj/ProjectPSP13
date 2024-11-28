@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control De Acceso👀</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Control de Acceso👀</h1>
+    </header>
+
+    <section class="intro">
+        <h2>Definición de control de acceso</h2>
+        <p>El control de acceso es un proceso de seguridad de datos que permite a las organizaciones gestionar quién está autorizado a acceder a los datos y recursos corporativos. El control de acceso seguro utiliza políticas que verifican que los usuarios sean quienes afirman ser y garantiza que se otorguen niveles de acceso de control adecuados a los usuarios.
+            <br>Implementar el control de acceso es un componente crucial de la seguridad de aplicación web, lo que garantiza que solo los usuarios correctos tengan el nivel adecuado de acceso a los recursos adecuados. El proceso es fundamental para ayudar a las organizaciones a evitar filtraciones de información y combatir  vectores de ataque, como un ataque de desbordamientos del búfer, un  ataque KRACK, un ataque en ruta o un ataque de suplantación de identidad.
+        </p>
+    </section>
+
+    <section>
+        <h3>¿Cuáles son los componentes del control de acceso?</h3>
+        <p>El control de acceso se gestiona a través de varios componentes:
+            <br><h3>Autenticación</h3>La autenticación es el proceso inicial de establecer la identidad de un usuario en seguridad de redes. Por ejemplo, cuando un usuario inicia sesión en su servicio de correo electrónico o cuenta de banca en línea con una combinación de nombre de usuario y contraseña, su identidad ha sido autenticada. Sin embargo, la autenticación por sí sola no es suficiente para proteger los datos de las organizaciones. 
+            <br><h3>Autorización</h3>La autorización agrega una capa adicional de seguridad al proceso de autenticación. Especifica los derechos y privilegios de acceso a los recursos para determinar si el usuario debe recibir acceso a los datos o realizar una transacción específica. Por ejemplo, un servicio de correo electrónico o una cuenta bancaria en línea puede requerir que los usuarios proporcionen autenticación de dos factores (2FA), que generalmente es una combinación de algo que saben (como una contraseña), algo que poseen (como un token) o algo que son (como una verificación biométrica). Esta información también puede verificarse a través de una aplicación móvil 2FA o un escaneo de huella digital en un teléfono inteligente.
+            <br><h3>De red</h3>Una vez que un usuario haya completado los pasos de autenticación y autorización, se verificará su identidad. Esto les otorga acceso al recurso en el que intentan iniciar sesión.
+            <br><h3>Gestión</h3>Las organizaciones pueden administrar su sistema de control de acceso agregando y eliminando la autenticación y autorización de sus usuarios y sistemas. La administración de estos sistemas puede volverse compleja en entornos de TI modernos que comprenden servicios en la nube y sistemas locales.
+            <br><h3>Auditoría</h3>Las organizaciones pueden hacer cumplir el principio de menor privilegio a través del proceso de auditoría de control de acceso. Esto les permite recopilar datos sobre la actividad del usuario y analizar esa información para descubrir posibles violaciones de acceso.
+
+        </p>
+    </section>
+    
+    <section>
+        <h3>Tipos de control de acceso</h3>
+        <p>
+            <ul>
+                <li>Control de Acceso basado en Roles (RBAC)</li>Se puede afirmar que este tipo de control de acceso es de los más utilizados. Se basa en la concesión de acceso a los usuarios en base a los roles asignados. Además, y para añadir capas extras de protección, se aplican políticas de seguridad que limitan la obtención de privilegios. Estos privilegios pueden aplicarse tanto en el acceso a datos como recursos del sistema. Hoy en día, la escalada de privilegios es una amenaza interna a nivel empresarial que causa estragos. El gran nivel de perjuicio, sobre todo a nivel económico que genera, debe ser un punto de atención para cualquier empresa que se vea susceptible a este tipo de amenazas de seguridad
+                <li>Control de Acceso Discrecional (DAC)</li>Es un tipo de control de acceso que dicta que el dueño de los datos decide respecto a los accesos. Lo que significa que dichos accesos serán concedidos a los usuarios en base a las reglas que el propio dueño de los datos especifica.
+                <br>Es un modelo de control de acceso con el que la mayoría de las personas probablemente ya estará familiarizada, porque es uno de los que se usa en la gran mayoría de los sistemas operativos que usamos hoy en día. Por ejemplo, si creamos una hoja de cálculo, nosotros, como los propietarios, podemos determinar quién más en nuestro entorno tiene acceso y qué tipo de acceso tiene a esa hoja de cálculo. Y nosotros, como propietarios de esa hoja de cálculo, podemos modificar ese acceso en cualquier momento que queramos.
+                <li>Control de Acceso Obligatorio (MAC)</li>A esta variante se la puede considerar como algo más arbitraria que las demás. Esto es así en el sentido de que a los usuarios se les concede el acceso en base a regulaciones establecidas por una autoridad central en una empresa o alguna que otra organización reguladora. Esto significa que el sistema operativo va a proporcionar los límites sobre cuánto acceso tendrá cada usuario a cada recurso o conjunto de recursos. Y estos generalmente se basan en ciertos niveles de autorización ya que a cada recurso al que alguien pueda necesitar acceder se le debe asignar una etiqueta.
+                <li>Control de Acceso basado en Atributos (ABAC)</li>La distinción de este tipo de control de acceso, es que al usuario y los recursos a los cuales le corresponde el acceso, se le agregan una serie de atributos. Los mismos permiten que se realicen evaluaciones que indican respecto al día, la hora, la ubicación y otros datos. Todo esto se tiene en cuenta a la hora de conceder o limitar acceso a datos y recursos. Este es un tipo que aplica un método más dinámico que se adapta a la situación de usuarios para tener más o menos acceso.
+            </ul>
+
+        </p>
+    </section>
+        
+    <section class="values">
+        <h3>Las limitiaciones de los Equipos Actuales</h3>
+        <p>El problema está en que, a pesar de que tenemos bastantes dispositivos con escáneres biométricos, muchos de los que utilizamos habitualmente no admiten la autenticación biométrica. La biometría ahora mismo no es algo habitual en ordenadores de sobremesa o portátiles, ya que generalmente no incluyen lectores biométricos. También, otro factor que debemos tener en cuenta, es que a la hora iniciar sesión en una web con un navegador, la utilización de la biometría todavía es muy limitada. En este sentido, hasta que los equipos y navegadores de Internet sean compatibles la autenticación biométrica, tiene muy pocas posibilidades.
+            <br>En cuanto a los dispositivos inteligentes como los smartphones con Android o iOS, tienen una autenticación biométrica en las que las credenciales de autenticación son almacenadas localmente. Sin embargo, este enfoque en el que no se almacenan las firmas biométricas sensibles en los servidores, nos excluye de la posibilidad de utilizarlo en otros lugares. En el caso de querer implementarlo, tendríamos que volver a registrarnos con credenciales como un nombre de usuario y contraseña. Además, antes de que se pueda volver a habilitar la autenticación biométrica, también el nuevo dispositivo debería tener esa tecnología. En resumen, para una autenticación biométrica vamos a necesitar un modelo diferente en donde el patrón biométrico se guarde en un servidor.
+            <br><h3>El problema de los cambios biométricos</h3>Otra cosa que se debe tener en cuenta es la posibilidad de cambios en la biometría. La posibilidad de cambios en la biometría es un hecho que puede afectar a los trabajadores. Una quemadura en un dedo puede afectar a nuestra huella digital, o una lesión que desfigure el rostro pueden ser algunos ejemplos. Sin duda, se trata de un problema potencial importante. Nos referimos en el caso en que la autenticación biométrica fuese el único método de autenticación en uso y no existiese un respaldo disponible.
+            <br><h3>Cómo afecta el Deepfake a la identidad biométrica</h3>En Internet no es difícil encontrarnos fotos falsas que simulan ser reales. A veces como diversión, como una simple broma que claramente sabemos que es falso, pero en otras en cambio puede hacernos dudar e incluso comprometer a las personas. Si aplicamos Deepfake a las imágenes podemos tener como resultados fotografías prácticamente idénticas a una original. Por ejemplo, pueden utilizar la Inteligencia Artificial para que una persona famosa parezca estar en un determinado lugar, como podría ser comiendo en un restaurante. Pero también pueden utilizar el mismo método para vídeos. Es más complejo, lógicamente, pero con resultados asombrosos. La tecnología cada vez permite más llegar a algo parecido a la realidad sin demasiados esfuerzos. Hay aplicaciones informáticas con las que podemos editar vídeos y, si lo unimos a la Inteligencia Artificial, los resultados son evidentes. Podemos decir por tanto que es un problema que puede llegar a afectar a la privacidad y seguridad de las personas. Realmente pueden servir para manipular información, para hacer creer lo que en realidad no es. Además, gracias a las redes sociales hay en Internet un banco enorme de fotos y vídeos que pueden ser manipuladas.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Nuestra Empresa. Todos los derechos reservados.</p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búfer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>📋 Búfer 📋</h1>
+    </header>
+
+    <section class="intro">
+        <h2>Desbordamiento de los Búfers</h2>
+        <p>El desbordamiento del búfer es un error o vulnerabilidad de codificación de software que pueden ser explotados por los piratas informáticos para obtener acceso no autorizado a los sistemas corporativos.  Es una de las vulnerabilidades de seguridad de software más conocidas, pero sigue siendo bastante común. Esto se debe, en parte, a que los desbordamientos del búfer pueden ocurrir de varias maneras y las técnicas utilizadas para prevenirlos suelen ser propensas a errores en los sistemas corporativos.
+            <br>El error de software se centra en búferes, que son secciones secuenciales de la memoria informática que retienen datos temporalmente a medida que se transfieren entre ubicaciones. También conocido como rebasamiento del búfer, el desbordamiento del búfer ocurre cuando la cantidad de datos en el búfer excede su capacidad de almacenamiento. Esos datos adicionales se desbordan en ubicaciones de memoria adyacentes y corrompen o sobrescriben los datos en esas ubicaciones.
+        </p>
+    </section>
+
+    <section>
+        <h2>¿Qué es un ataque de desbordamiento de búfer?</h2>
+        <p>Un ataque de desbordamiento del búfer se produce cuando un atacante manipula el error de codificación para llevar a cabo acciones maliciosas y comprometer el sistema afectado. El atacante altera la ruta de ejecución de la aplicación y sobrescribe elementos de su memoria, lo que modifica la ruta de ejecución del programa para dañar archivos existentes o exponer datos.
+            <br>Un ataque de desbordamiento de búfer generalmente implica violaciones de los lenguajes de programación y sobrescribir los límites de los búferes en los que existen. La mayoría de los desbordamientos del búfer son causados por la combinación de manipulación de la memoria y suposiciones erróneas en torno a la composición o el tamaño de los datos.
+            <br>Una vulnerabilidad de desbordamiento del búfer generalmente ocurrirá cuando el código:
+            <ul>
+                <li>Depende de datos externos para controlar su comportamiento</li>
+                <li>Depende de las propiedades de datos que se aplican más allá de su alcance inmediato</li>
+                <li>Es tan complejo que los programadores no pueden predecir su comportamiento con precisión</li>
+            </ul>
+        </p>
+    </section>
+
+    <section>
+        <h3>Consecuencias del desbordamiento del búfer</h3>
+        <p>Las consecuencias comunes de un ataque de desbordamiento del búfer incluyen las siguientes:
+            <ul>
+                <h3>Fallas del sistema:</h3><li>un ataque de desbordamiento de búfer generalmente provocará la falla del sistema. También puede resultar en una falta de disponibilidad y programas que se ponen en un bucle infinito</li>
+                <h3>Pérdida de control de acceso:</h3><li>un ataque de desbordamiento del búfer a menudo implicará el uso de código arbitrario, que a menudo está fuera del alcance de las políticas de seguridad de los programas.</li>
+                <h3>Otros problemas de seguridad:</h3><li>cuando un ataque de desbordamiento del búfer resulta en la ejecución de código arbitrario, el atacante puede usarlo para explotar otras vulnerabilidades y subvertir otros servicios de seguridad.</li>
+            </ul>
+        </p>
+    </section>
+    
+    <section>
+        <h3>Tipos de ataques de desbordamiento del búfer</h3>
+        <p>Existen varios tipos de ataques de desbordamiento del búfer que los atacantes utilizan para explotar los sistemas de las organizaciones. Los más comunes son:
+            <ul>
+                <li>Desbordamientos del búfer basados en pila: esta es la forma más común de ataque de desbordamiento de búfer. El enfoque basado en pilas se produce cuando un atacante envía datos que contienen código malicioso a una aplicación, que almacena los datos en un búfer de pila. Esto sobrescribe los datos en la pila, incluido su puntero de retorno, que controla las transferencias al atacante.</li>
+                <li>Desbordamientos del búfer basados en pilas: un ataque basado en pilas es más difícil de llevar a cabo que el enfoque basado en pilas. Implica el ataque que inunda el espacio de memoria de un programa más allá de la memoria que utiliza para las operaciones actuales de tiempo de ejecución.</li>
+                <li>Ataque de cadena de formato: se produce una explotación de cadena de formato cuando una aplicación procesa datos de entrada como comando o no valida los datos de entrada de manera efectiva. Esto permite al atacante ejecutar código, leer datos en la pila o causar fallas de segmentación en la aplicación. Esto podría desencadenar nuevas acciones que amenazan la seguridad y estabilidad del sistema.</li>
+            </ul>
+
+        </p>
+    </section>
+        
+    <section class="values">
+        <h3>¿Qué idiomas de programación son más vulnerables?</h3>
+        <p>Casi todas las aplicaciones, servidores web y entornos de aplicaciones web son vulnerables a los desbordamientos del búfer. Los entornos que están escritos en idiomas interpretados, como Java y Python, son inmunes a los ataques, con la excepción de los desbordamientos en su intérprete.
+            <br>Los ataques de desbordamiento del búfer generalmente son causados por errores de codificación y errores en el desarrollo de las aplicaciones para atacar los sistemas corporativos. Esto da como resultado el desbordamiento del búfer, ya que la aplicación no asigna búferes del tamaño adecuado y no verifica si hay problemas de desbordamiento. Esta cuestión es particularmente problemática en el lenguaje de programación C/C++, ya que no tiene incorporada la protección contra desbordamiento del búfer.
+            <br>Este lenguaje de programación no es el único vulnerable a los ataques de desbordamiento del búfer. Un programa de desbordamiento del búfer en Assembly, C, C++ o Fortran también es particularmente vulnerable y más probable que permita a los atacantes a poner en riesgo un sistema. Sin embargo, las aplicaciones escritas en JavaScript o Perl suelen ser menos vulnerables a los ataques de desbordamiento del búfer.
+        </p>
+    </section>
+
+    <section>
+        <h3>Cómo evitar desbordamientos del búfer</h3>
+        <p>Los desarrolladores de aplicaciones pueden prevenir los desbordamientos de los búferes al crear medidas de seguridad en su código de desarrollo, usar lenguajes de programación que incluyan protección integrada y probar el código regularmente para detectar y corregir errores.
+            <br>Uno de los métodos más comunes para prevenir los desbordamientos del búfer es evitar las funciones estándar de la biblioteca que no se han verificado con límites, que incluyen get, scanf y strcpy. Otro método común es evitar los rebasamientos de búfer mediante el uso de verificación de límites que se aplica en tiempo de ejecución. Esto verifica automáticamente que los datos escritos en un búfer estén dentro de los límites adecuados.
+            <ul>
+                <h3>Aleatorización del diseño del espacio de dirección (ASLR):</h3><li>Aleatorización del diseño del espacio de dirección (ASLR): los ataques de desbordamiento del búfer generalmente necesitan saber dónde se encuentra el código ejecutable. ASLR se mueve al azar alrededor de ubicaciones de regiones de datos para hacer aleatorios espacios de dirección, lo que hace que los ataques de desbordamiento sean casi imposibles.</li>
+                <h3>Prevención de ejecución de datos:</h3><li>este método evita que un ataque pueda ejecutar código en regiones no ejecutables al marcar áreas de memoria como ejecutables o no ejecutables.</li>
+                <h3>Protección de sobrescritura de manejo de excepciones estructuradas (SEHOP)</h3><li>los atacantes pueden intentar sobrescribir el manejo de excepciones estructuradas (SEH), que es un sistema integrado que administra excepciones de hardware y software. Lo hacen a través de un ataque de desbordamiento basado en pilas para sobrescribir la bitácora de registro de excepciones, que se almacena en la pila del programa. SEHOP evita que el código malicioso de los atacantes pueda atacar el SEH y usar su técnica de explotación de sobrescritura.</li>
+            </ul>
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Nuestra Empresa. Todos los derechos reservados.</p>
+    </footer>
+    
+</body>
+</html>

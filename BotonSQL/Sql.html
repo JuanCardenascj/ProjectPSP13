@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inyección SQL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Inyección SQL o Bases de Datos 🗂</h1>
+    </header>
+
+    <section class="intro">
+        <h2>¿Qué es la inyección de SQL?</h2>
+        <p>Una inyección de SQL, a veces abreviada como SQLi, es un tipo de vulnerabilidad en la que un atacante usa un trozo de código SQL (lenguaje de consulta estructurado) para manipular una base de datos y acceder a información potencialmente valiosa. Es uno de los tipos de ataques más frecuentes y amenazadores, ya que puede atacar prácticamente cualquier sitio o aplicación web que use una base de datos basada en SQL (la mayoría).
+            <br><h3>¿Cómo funcionan los ataques de inyección de SQL?</h3>Para entender la inyección de SQL, es importante saber qué es el lenguaje de consulta estructurado (SQL). SQL es un lenguaje de consulta que se utiliza en programación para modificar y eliminar los datos almacenados en bases de datos relacionales y acceder a ellos. Debido a que la gran mayoría de los sitios y aplicaciones web utilizan bases de datos SQL, un ataque de inyección de SQL puede tener consecuencias graves para las organizaciones.
+            <br>Una consulta de SQL es una solicitud enviada a una base de datos por algún tipo de actividad o función, como consultas de datos o una ejecución de código SQL que se debe realizar. Un ejemplo es cuando la información de inicio de sesión se envía a través de un formulario web para que el usuario pueda acceder al sitio. Normalmente, este tipo de formulario web está diseñado para aceptar solo tipos muy específicos de datos, como un nombre o una contraseña. Cuando se agrega esa información, esta se coteja contra una base de datos y, si coincide, se otorga acceso al usuario. Si no coincide, se niega el acceso.
+            <br>Debido a la prevalencia de sitios web y servidores que utilizan bases de datos, las vulnerabilidades de inyección de SQL son uno de los tipos de ciberataques más antiguos y generalizados. Varios avances en la comunidad hacker aumentaron el riesgo de este tipo de ataques; en especial, la llegada de herramientas para detectar y aprovechar la inyección de SQL. Disponibles de forma gratuita en desarrolladores de código abierto, estas herramientas les permiten a los cibercriminales realizar ataques automáticamente en tan solo minutos, ya que les permiten acceder a cualquier tabla o columna de la base de datos con tan solo un clic y un proceso de ataque. 
+        </p>
+    </section>
+
+    <section>
+        <h3>Signos de SQL</h3>
+        <p>Es posible que un ataque de inyección de SQL exitoso no muestre ningún signo. Sin embargo, a veces hay algunas señales externas, como las siguientes:
+            <br><ul>
+                <li>Recepción de una cantidad excesiva de solicitudes en un plazo breve. Por ejemplo, es posible que vea muchos correos electrónicos del formulario de contacto de su página web.</li>
+                <li>Anuncios que redirigen a sitios web sospechosos.</li>
+                <li>Ventanas emergentes desconocidas y mensajes de error.</li>
+            </ul>
+        </p>
+    </section>
+    
+    <section>
+        <h3>Tipos de inyección de SQL</h3>
+        <p>Según la forma de acceso a los datos de backend y la extensión del posible daño provocado, las inyecciones de SQL se pueden dividir en las siguientes tres categorías:
+            <br><h3>SQLi en banda</h3>Este tipo de ataque SQLi es sencillo para los atacantes, porque usan el mismo canal de comunicación para lanzar ataques y obtener resultados. Este tipo de ataque SQLi tiene dos subvariantes:
+            <br><ul>
+                <li>SQLi basado en errores</li>
+                <li>SQLi basado en unión</li>
+            </ul>
+            <br><h3>SQLi inferencial (también conocida como inyección de SQL ciega)</h3>En este tipo de SQLi, los atacantes usan patrones de respuesta y comportamiento del servidor después de enviar cargas útiles de datos para obtener más información sobre su estructura. Los datos no se transfieren de la base de datos del sitio web al atacante, así que el atacante no ve la información sobre el ataque en banda (por eso se usa el término “SQLi ciega”). La SQLi inferencial se puede clasificar en dos subtipos:
+            <br><ul>
+                <li>SQLi basado en el tiempo</li>
+                <li>SQLi booleana</li>
+            </ul>
+            <br><h3>SQLi fuera de banda</h3>Este tipo de ataque de SQL se puede llevar a cabo en las siguientes dos situaciones:
+            <br><ul>
+                <li>Cuando los atacantes no pueden usar el mismo canal para lanzar el ataque y compartir información</li>
+                <li>cuando un servidor es demasiado lento o inestable para realizar estas acciones.</li>
+            </ul>
+        </p>
+    </section>
+        
+    <section class="values">
+        <h3>Impacto de los ataques de inyección de SQL</h3>
+        <p>Un ataque de inyección de SQL exitoso puede tener consecuencias graves para una empresa. Esto se debe a que un ataque de inyección de SQL puede lograr lo siguiente:
+            <br><ul>
+                <li>Exponer datos sensibles.</li>
+                <li>Comprometer la integridad de los datos.</li>
+                <li>Comprometer la privacidad de los usuarios.</li>
+                <li>Otorgarle al atacante acceso de administrador al sistema.</li>
+                <li>Otorgarle a un atacante acceso general a su sistema.</li>
+            </ul>
+            <br><h3>Ejemplos de inyección de SQL</h3>A lo largo de los años, muchas organizaciones fueron víctimas de SQLi. Estos son algunos ejemplos de gran repercusión:
+            <br><ul>
+                <li>Fornite, 2019Fornite es un juego en línea con más de 350 millones de usuarios. En 2019, se descubrió una vulnerabilidad de inyección de SQL que les permitía a los atacantes acceder a las cuentas de los usuarios. La vulnerabilidad se corrigió.</li>
+                <li>Cisco, 2018 En 2018, se encontró una vulnerabilidad de inyección de SQL en Cisco Prime License Manager. La vulnerabilidad permitía que los atacantes tuvieran acceso shell a los sistemas en los que estaba implementado el administrador de licencias. Cisco ya corrigió la vulnerabilidad.</li>
+                <li>Tesla, 2014 En 2014, investigadores de seguridad anunciaron que podían quebrantar el sitio web de Tesla con una inyección de SQL, lo que les permitiría obtener privilegios de administrador y robar datos de los usuarios en el proceso.</li>
+            </ul>
+        
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Nuestra Empresa. Todos los derechos reservados.</p>
+    </footer>
+    
+</body>
+</html>
