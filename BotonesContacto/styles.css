@@ -1,4 +1,4 @@
-/* Estilos Globales */
+
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +16,7 @@ body {
     background: linear-gradient(135deg, #e74c3c, #8e44ad);
 }
 
-/* Encabezado */
+
 header {
     background-color: #3498db;
     color: white;
@@ -36,13 +36,13 @@ header p {
     font-size: 1.2rem;
 }
 
-/* Efecto fadeIn para animar la aparición de elementos */
+
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
 
-/* Sección Contacto */
+
 #contacto {
     max-width: 900px;
     margin: 50px auto;
@@ -77,7 +77,7 @@ header p {
     color: #3498db;
 }
 
-/* Redes Sociales */
+
 .social-links {
     display: flex;
     justify-content: center;
@@ -104,7 +104,7 @@ header p {
     margin-right: 10px;
 }
 
-/* Formulario de Contacto */
+
 #formulario {
     max-width: 900px;
     margin: 50px auto;
@@ -152,7 +152,7 @@ form button:hover {
     transform: scale(1.05);
 }
 
-/* Footer */
+
 footer {
     font-size: 1rem;
     color: #777;

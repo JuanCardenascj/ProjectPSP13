@@ -1,9 +1,9 @@
-// Función para guardar un tema en localStorage
+
 function guardarTema(titulo, descripcion) {
     let temas = JSON.parse(localStorage.getItem('temas')) || [];
 
     let nuevoTema = {
-        id: temas.length + 1, // Incrementa el ID
+        id: temas.length + 1, 
         titulo: titulo,
         descripcion: descripcion,
         likes: 0,
@@ -13,15 +13,15 @@ function guardarTema(titulo, descripcion) {
     temas.push(nuevoTema);
     localStorage.setItem('temas', JSON.stringify(temas));
 
-    // Actualiza la vista después de guardar el nuevo tema
+    
     mostrarTemas();
 }
 
-// Función para mostrar todos los temas
+
 function mostrarTemas() {
     let temas = JSON.parse(localStorage.getItem('temas')) || [];
     const listaTemas = document.getElementById('temas-lista');
-    listaTemas.innerHTML = ''; // Limpia la lista antes de renderizarla
+    listaTemas.innerHTML = ''; 
 
     temas.forEach(tema => {
         let temaElement = document.createElement('li');
@@ -45,18 +45,18 @@ function mostrarTemas() {
     });
 }
 
-// Función para eliminar un tema
+
 function eliminarTema(id) {
     let temas = JSON.parse(localStorage.getItem('temas')) || [];
     temas = temas.filter(t => t.id !== id);
 
     localStorage.setItem('temas', JSON.stringify(temas));
 
-    // Actualizar la interfaz después de eliminar el tema
+  
     mostrarTemas();
 }
 
-// Función para manejar el "Like"
+
 function darLike(id) {
     let temas = JSON.parse(localStorage.getItem('temas')) || [];
     let tema = temas.find(t => t.id === id);
@@ -67,7 +67,7 @@ function darLike(id) {
     }
 }
 
-// Función para agregar un comentario
+
 function comentar(id) {
     let temas = JSON.parse(localStorage.getItem('temas')) || [];
     let tema = temas.find(t => t.id === id);
@@ -79,7 +79,7 @@ function comentar(id) {
     }
 }
 
-// Inicializar la página mostrando los temas al cargar
+
 window.onload = function() {
     mostrarTemas();
 

@@ -11,15 +11,15 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
-    background-image: url('Imagenes/fondo2.jpg'); /* Aquí pones la ruta de la imagen */
+    background-image: url('Imagenes/fondo2.jpg'); 
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Esto hace que el fondo no se mueva al hacer scroll */
+    background-attachment: fixed; 
 }
 
-/* Estilos de cabecera */
+
 header {
-    background-color: rgba(34, 34, 34, 0.8); /* Fondo oscuro con opacidad */
+    background-color: rgba(34, 34, 34, 0.8); 
     color: white;
     padding: 30px 20px;
     text-align: center;
@@ -33,7 +33,7 @@ header h1 {
     animation: slideIn 2s ease-out;
 }
 
-/* Animaciones */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -52,9 +52,9 @@ header h1 {
     }
 }
 
-/* Sección Principal */
+
 section {
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad para que se vea el fondo */
+    background-color: rgba(255, 255, 255, 0.8); 
     padding: 40px 20px;
     margin: 20px auto;
     max-width: 800px;
@@ -78,7 +78,7 @@ p {
     font-size: 1.1em;
 }
 
-/* Estilo para las listas de valores */
+
 ul {
     list-style: none;
     padding-left: 0;
@@ -98,9 +98,9 @@ ul li::before {
     color: #4CAF50;
 }
 
-/* Estilos de pie de página */
+
 footer {
-    background-color: rgba(34, 34, 34, 0.8); /* Fondo oscuro con opacidad */
+    background-color: rgba(34, 34, 34, 0.8); 
     color: white;
     text-align: center;
     padding: 20px;
@@ -110,7 +110,7 @@ footer {
     bottom: 0;
 }
 
-/* Efecto de hover en links y botones */
+
 a {
     color: #3498db;
     text-decoration: none;
@@ -121,13 +121,13 @@ a:hover {
     color: #2980b9;
 }
 
-/* Estilo para el Footer */
+
 footer p {
     margin: 0;
     font-size: 1em;
 }
 
-/* Estilos Responsive */
+
 @media (max-width: 768px) {
     header h1 {
         font-size: 2.5em;

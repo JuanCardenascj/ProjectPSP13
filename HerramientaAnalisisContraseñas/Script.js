@@ -3,7 +3,7 @@ function validarContrasena() {
     const mensaje = document.getElementById("mensaje");
     const resultado = document.getElementById("resultado");
 
-    // Criterios de una contraseña segura
+   
     const longitudMinima = 12;
     const tieneMayuscula = /[A-Z]/.test(contrasena);
     const tieneMinuscula = /[a-z]/.test(contrasena);
@@ -11,7 +11,7 @@ function validarContrasena() {
     const tieneEspecial = /[!@#$%^&*(),.?":{}|<>]/.test(contrasena);
     const contraseñasComunes = ["123456", "password", "qwerty", "abc123"];
 
-    // Verificar que la contraseña cumple con los criterios
+    
     let mensajeResultado = "";
     let claseResultado = "";
 
@@ -28,7 +28,7 @@ function validarContrasena() {
         claseResultado = "media";
     }
 
-    // Mostrar el mensaje y el resultado
+   
     mensaje.innerText = mensajeResultado;
     resultado.innerText = mensajeResultado;
     resultado.className = claseResultado;

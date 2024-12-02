@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-image: url('ImagenesR/Fondo.jpg'); /* Imagen de fondo */
+    background-image: url('ImagenesR/Fondo.jpg'); 
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
+    background-color: rgba(0, 0, 0, 0.7); 
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
@@ -54,7 +54,7 @@ input {
 }
 
 input:focus {
-    border-color: #4caf50; /* Cambiar color del borde cuando se enfoca */
+    border-color: #4caf50; 
     outline: none;
     box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
 }
@@ -68,11 +68,11 @@ input:focus {
 }
 
 .invalid {
-    color: #f44336; /* Rojo para requisitos no cumplidos */
+    color: #f44336; 
 }
 
 .valid {
-    color: #4caf50; /* Verde para requisitos cumplidos */
+    color: #4caf50; 
 }
 
 #message {
@@ -82,7 +82,7 @@ input:focus {
     transition: color 0.3s ease;
 }
 
-/* Efectos para el mensaje */
+
 #message.valid {
     color: #4caf50;
 }

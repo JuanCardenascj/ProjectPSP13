@@ -14,7 +14,7 @@ document.getElementById('form-experiencia').addEventListener('submit', function 
         mostrarExperiencia(nuevaExperiencia);
         guardarExperiencia(nuevaExperiencia);
 
-        // Limpiar el formulario después de enviar
+
         document.getElementById('form-experiencia').reset();
     }
 });
@@ -59,14 +59,13 @@ function agregarComentario(button) {
         const comentariosDiv = experienciaDiv.querySelector('.comentarios');
         comentariosDiv.appendChild(comentarioDiv);
 
-        // Limpiar el campo de comentario
+
         comentarioInput.value = '';
         button.closest('.form-comentario').style.display = 'none';
     }
 }
 
 function guardarExperiencia(experiencia) {
-    // Aquí puedes agregar funcionalidad para guardar las experiencias (por ejemplo, en un servidor o en el localStorage)
-    // localStorage.setItem('experiencias', JSON.stringify([...]));
+   
 }
 

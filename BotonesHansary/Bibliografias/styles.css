@@ -1,18 +1,18 @@
-/* Estilo base para resetear margenes y rellenos */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos globales */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
     color: #333;
 }
 
-/* Estilo del encabezado */
+
 header {
     background-color: #343a40;
     color: white;
@@ -45,7 +45,7 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Estilos de las secciones */
+
 section {
     padding: 20px;
     margin: 20px;
@@ -67,7 +67,7 @@ section ul li {
     margin-bottom: 15px;
 }
 
-/* Estilo para los links dentro de los artículos */
+
 a {
     color: #007bff;
     text-decoration: none;
@@ -77,7 +77,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Footer */
+
 footer {
     background-color: #343a40;
     color: white;

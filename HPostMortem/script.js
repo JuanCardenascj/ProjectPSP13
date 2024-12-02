@@ -14,16 +14,16 @@ function analizarLog() {
         const resultados = document.getElementById("logOutput");
         const reporte = document.getElementById("reporte");
 
-        // Mostrar el contenido del log
+        
         resultados.textContent = logData;
 
-        // Analizar el log en busca de patrones sospechosos
+        
         const patronesSospechosos = [
-            /failed login/i,   // Intentos de acceso fallidos
-            /error/i,          // Errores en el sistema
-            /attack/i,         // Palabra clave para indicar un ataque
-            /malicious/i,      // Actividad maliciosa detectada
-            /unauthorized/i    // Accesos no autorizados
+            /failed login/i,   
+            /error/i,          
+            /attack/i,         
+            /malicious/i,      
+            /unauthorized/i    
         ];
 
         let incidentesDetectados = [];
@@ -34,7 +34,7 @@ function analizarLog() {
             }
         });
 
-        // Generar informe de incidente
+        
         if (incidentesDetectados.length > 0) {
             reporte.textContent = incidentesDetectados.join('\n');
         } else {

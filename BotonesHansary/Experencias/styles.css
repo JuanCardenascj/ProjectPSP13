@@ -1,22 +1,22 @@
-/* Reset y estilo básico */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Fondo con imagen y parallax */
+
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-image: url('Imagenes/fondo2.jpg'); /* Cambia la ruta de la imagen */
+    background-image: url('Imagenes/fondo2.jpg'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     color: #333;
 }
 
-/* Encabezado */
+
 header {
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
@@ -32,7 +32,7 @@ header h1 {
     margin-bottom: 20px;
 }
 
-/* Sección de formularios y experiencias */
+
 section {
     background-color: rgba(255, 255, 255, 0.9); 
     border-radius: 12px;
@@ -43,10 +43,10 @@ section {
 }
 
 section:hover {
-    transform: scale(1.02); /* Efecto de hover */
+    transform: scale(1.02);
 }
 
-/* Títulos y párrafos */
+
 h2 {
     font-size: 2rem;
     margin-bottom: 20px;
@@ -60,7 +60,7 @@ p {
     margin-bottom: 15px;
 }
 
-/* Formulario */
+
 form label {
     display: block;
     margin: 10px 0 5px;
@@ -103,7 +103,7 @@ form button:focus {
     outline: none;
 }
 
-/* Sección de experiencias */
+
 .experiencia {
     background-color: #ecf0f1;
     padding: 20px;
@@ -189,7 +189,7 @@ footer {
     margin-top: 40px;
 }
 
-/* Animaciones */
+
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }

@@ -1,14 +1,14 @@
-/* Reseteo de estilos básicos */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Fondo de pantalla y diseño de la página */
+
 body {
     font-family: 'Arial', sans-serif;
-    background-image: url('ImagenesA/Fondo.jpg'); /* Cambia la URL por tu imagen */
+    background-image: url('ImagenesA/Fondo.jpg'); 
     background-size: cover;
     background-position: center;
     display: flex;
@@ -18,9 +18,9 @@ body {
     color: white;
 }
 
-/* Contenedor principal */
+
 .overlay {
-    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro para el contraste */
+    background: rgba(0, 0, 0, 0.5); 
     padding: 20px;
     border-radius: 15px;
     width: 100%;
@@ -29,7 +29,7 @@ body {
     animation: fadeIn 1s ease-in-out;
 }
 
-/* Animación para entrada suave */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -39,7 +39,7 @@ body {
     }
 }
 
-/* Estilos del título */
+
 h1 {
     text-align: center;
     font-size: 2.5rem;
@@ -48,7 +48,7 @@ h1 {
     color: #fff;
 }
 
-/* Estilos de los campos */
+
 label {
     font-size: 1rem;
     margin-bottom: 10px;
@@ -72,7 +72,7 @@ input:focus {
     background-color: #fff;
 }
 
-/* Estilos para el mensaje y el resultado */
+
 #resultado {
     margin-top: 20px;
     padding: 10px;
@@ -83,21 +83,21 @@ input:focus {
 }
 
 #resultado.débil {
-    background-color: #f44336; /* Rojo para débil */
+    background-color: #f44336; 
     color: #fff;
 }
 
 #resultado.fuerte {
-    background-color: #4caf50; /* Verde para fuerte */
+    background-color: #4caf50;
     color: #fff;
 }
 
 #resultado.media {
-    background-color: #ffeb3b; /* Amarillo para media */
+    background-color: #ffeb3b; 
     color: #000;
 }
 
-/* Estilo de los mensajes */
+
 #mensaje {
     font-size: 1.1rem;
     margin-top: 10px;
@@ -105,7 +105,7 @@ input:focus {
     text-align: center;
 }
 
-/* Efecto de animación en el resultado */
+
 @keyframes resultAnimation {
     from {
         transform: scale(0);

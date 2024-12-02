@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-image: url('ImagenesP/Fondo.jpg'); /* Imagen de fondo */
+    background-image: url('ImagenesP/Fondo.jpg'); 
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -21,7 +21,7 @@ body {
 }
 
 .container {
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
+    background-color: rgba(0, 0, 0, 0.7); 
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
@@ -103,7 +103,7 @@ pre {
     color: #ddd;
 }
 
-/* Efecto de transición en el contenedor */
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -117,7 +117,7 @@ pre {
     animation: fadeIn 1s ease-in-out;
 }
 
-/* Responsividad para dispositivos móviles */
+
 @media (max-width: 480px) {
     .container {
         max-width: 90%;
