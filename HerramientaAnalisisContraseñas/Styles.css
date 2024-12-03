@@ -72,7 +72,6 @@ input:focus {
     background-color: #fff;
 }
 
-
 #resultado {
     margin-top: 20px;
     padding: 10px;
@@ -97,14 +96,12 @@ input:focus {
     color: #000;
 }
 
-
 #mensaje {
     font-size: 1.1rem;
     margin-top: 10px;
     font-weight: 300;
     text-align: center;
 }
-
 
 @keyframes resultAnimation {
     from {
